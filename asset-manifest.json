@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ElvishEddy/food-menu/static/css/main.ae0160de.css",
+    "main.js": "/ElvishEddy/food-menu/static/js/main.d84d0478.js",
+    "index.html": "/ElvishEddy/food-menu/index.html",
+    "main.ae0160de.css.map": "/ElvishEddy/food-menu/static/css/main.ae0160de.css.map",
+    "main.d84d0478.js.map": "/ElvishEddy/food-menu/static/js/main.d84d0478.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae0160de.css",
+    "static/js/main.d84d0478.js"
+  ]
+}
