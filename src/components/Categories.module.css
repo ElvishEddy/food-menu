@@ -1,0 +1,32 @@
+.menuTabing {
+  padding-bottom: 50px;
+}
+
+.btn {
+  padding: 8px 10px;
+}
+
+.btnLists {
+  margin: 0 auto;
+  padding: 15px 0;
+  display: block;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #ebebeb;
+  width: 470px;
+  border-radius: 50px;
+}
+
+.btnLists a {
+  text-decoration: none;
+  padding: 15px 28px;
+  color: #000;
+  border-radius: 50px;
+  transition: all 400ms ease;
+}
+
+.btnLists a:hover {
+  background-color: #fd9d3e;
+  color: #fff;
+}

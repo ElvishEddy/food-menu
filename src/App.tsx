@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
+import Menu from "./components/Menu";
+import Categories from "./components/Categories";
+import menu from "./data";
+
+import styles from "./App.module.css";
+
+const categoryArr = new Set(menu.map((item) => item.category));
+//@ts-ignore
+const allCategories = ["all", ...categoryArr];
 function App() {
+  const [menuItems, setMenuItems] = useState(menu);
+  const [categories, setCategories] = useState(allCategories);
+  const [isClick, setClick] = useState(false);
+
+  const filterItems = (category: string) => {
+    if (category === "all") {
+      setMenuItems(menu);
+      return;
+    }
+    const newItems = menu.filter((item) => item.category === category);
+    setMenuItems(newItems);
+
+    setClick(!isClick);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <h1 className={styles.bigHeading}>Food Menus</h1>
+      <Categories
+        allCategories={allCategories}
+        filterItems={filterItems}
+        isClick={isClick}
+      />
+      <Menu data={menuItems} />
     </div>
   );
 }

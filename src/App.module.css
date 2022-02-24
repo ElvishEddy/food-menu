@@ -1,0 +1,16 @@
+.app {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.bigHeading {
+  text-align: center;
+  color: #fd9d3e;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.bigHeading::selection {
+  color: #54a0ff;
+}
