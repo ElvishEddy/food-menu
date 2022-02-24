@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/elvisheddy/food-menu/static/css/main.ae0160de.css",
-    "main.js": "/elvisheddy/food-menu/static/js/main.d84d0478.js",
-    "index.html": "/elvisheddy/food-menu/index.html",
-    "main.ae0160de.css.map": "/elvisheddy/food-menu/static/css/main.ae0160de.css.map",
-    "main.d84d0478.js.map": "/elvisheddy/food-menu/static/js/main.d84d0478.js.map"
+    "main.css": "/food-menu/static/css/main.ae0160de.css",
+    "main.js": "/food-menu/static/js/main.d84d0478.js",
+    "index.html": "/food-menu/index.html",
+    "main.ae0160de.css.map": "/food-menu/static/css/main.ae0160de.css.map",
+    "main.d84d0478.js.map": "/food-menu/static/js/main.d84d0478.js.map"
   },
   "entrypoints": [
     "static/css/main.ae0160de.css",
